@@ -19,10 +19,10 @@ LEARNING_PLAN = {
                 "name": "Day 1-2: LLM 基础概念",
                 "ddl": 2,
                 "resources": [
-                    {"title": "🇨🇳 李沐 - 大语言模型原理（中文）", "url": "https://www.bilibili.com/video/BV1TD4y137mP"},
-                    {"title": "🇨🇳 ChatGPT 工作原理（中文图解）", "url": "https://zhuanlan.zhihu.com/p/619490922"},
-                    {"title": "🇨🇳 什么是 Token（中文）", "url": "https://platform.openai.com/tokenizer"},
-                    {"title": "🇬🇧 3Blue1Brown - Attention（可开字幕）", "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"}
+                    {"title": "🇨🇳 李沐 - 大语言模型原理", "url": "https://space.bilibili.com/1567748478/channel/seriesdetail?sid=3343093"},
+                    {"title": "🇨🇳 ChatGPT 原理解析（跟李沐学AI）", "url": "https://www.bilibili.com/video/BV1TD4y137mP"},
+                    {"title": "🇨🇳 Tokenizer 工具实战", "url": "https://platform.openai.com/tokenizer"},
+                    {"title": "🇨🇳 大模型基础知识（知乎专栏）", "url": "https://zhuanlan.zhihu.com/p/636784644"}
                 ],
                 "exercise": "用自己的话解释：Tokenization、Embedding、Attention、Transformer 四个概念",
                 "hint": "思考：为什么 GPT 不能直接理解文字？Token 是什么？Attention 在做什么计算？"
@@ -31,10 +31,10 @@ LEARNING_PLAN = {
                 "name": "Day 3-4: Transformer 架构深入",
                 "ddl": 4,
                 "resources": [
-                    {"title": "🇨🇳 李沐论文精读 - Transformer（中文）", "url": "https://www.bilibili.com/video/BV1pu411o7BE"},
-                    {"title": "🇨🇳 图解 Transformer（中文翻译）", "url": "https://blog.csdn.net/qq_41664845/article/details/84969266"},
-                    {"title": "🇨🇳 Attention 机制详解（中文）", "url": "https://zhuanlan.zhihu.com/p/47282410"},
-                    {"title": "🇬🇧 Illustrated Transformer（可翻译）", "url": "https://jalammar.github.io/illustrated-transformer/"}
+                    {"title": "🇨🇳 李沐 - Transformer 论文精读", "url": "https://www.bilibili.com/video/BV1pu411o7BE"},
+                    {"title": "🇨🇳 图解 Transformer（推荐）", "url": "https://jalammar.github.io/illustrated-transformer/"},
+                    {"title": "🇨🇳 Attention 机制详解", "url": "https://zhuanlan.zhihu.com/p/47282410"},
+                    {"title": "🇬🇧 Andrej Karpathy - GPT 从零实现", "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY"}
                 ],
                 "exercise": "绘制 Transformer 完整架构图，手动计算一次 Self-Attention（3个词的例子）",
                 "hint": "Q=WQ*X, K=WK*X, V=WV*X, Attention(Q,K,V) = softmax(QK^T/√d_k)V，重点理解 Multi-Head"
@@ -43,10 +43,10 @@ LEARNING_PLAN = {
                 "name": "Day 5-6: Prompt Engineering 基础",
                 "ddl": 6,
                 "resources": [
-                    {"title": "🇨🇳 Prompt Engineering 中文指南", "url": "https://www.promptingguide.ai/zh"},
-                    {"title": "🇨🇳 吴恩达课程（B站中文字幕）", "url": "https://www.bilibili.com/video/BV1Bo4y1A7FU"},
-                    {"title": "🇨🇳 Prompt 技巧大全（中文）", "url": "https://github.com/f/awesome-chatgpt-prompts/blob/main/README-cn.md"},
-                    {"title": "🇨🇳 OpenAI Prompt 最佳实践（中文）", "url": "https://cookbook.openai.com/"}
+                    {"title": "🇨🇳 Prompt Engineering 完整指南", "url": "https://www.promptingguide.ai/zh"},
+                    {"title": "🇨🇳 吴恩达 Prompt 课程（中字）", "url": "https://www.bilibili.com/video/BV1Bo4y1A7FU"},
+                    {"title": "🇨🇳 ChatGPT Prompt 技巧合集", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"},
+                    {"title": "🇨🇳 OpenAI 官方 Prompt 指南", "url": "https://platform.openai.com/docs/guides/prompt-engineering"}
                 ],
                 "exercise": "掌握 6 种 Prompt 技巧：Zero-shot、Few-shot、CoT、Self-Consistency、ToT、ReAct",
                 "hint": "实践：写一个旅游规划 Prompt，要求输出 JSON 格式，包含景点、预算、时间安排"
@@ -55,9 +55,10 @@ LEARNING_PLAN = {
                 "name": "Day 7-8: Prompt 进阶技巧",
                 "ddl": 8,
                 "resources": [
-                    {"title": "🇨🇳 Prompt 注入攻防（中文）", "url": "https://learnprompting.org/zh-Hans/docs/prompt_hacking/injection"},
-                    {"title": "🇨🇳 提示词工程指南（中文）", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide/tree/main/guides/prompts-intro.zh.md"},
-                    {"title": "🇨🇳 常用 Prompt 模板（中文）", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"}
+                    {"title": "🇨🇳 Learn Prompting 中文教程", "url": "https://learnprompting.org/zh-Hans/docs/intro"},
+                    {"title": "🇨🇳 Prompt Engineering 完整课程", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide"},
+                    {"title": "🇨🇳 Awesome ChatGPT Prompts", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"},
+                    {"title": "🇨🇳 Prompt 注入攻防实战", "url": "https://learnprompting.org/zh-Hans/docs/prompt_hacking/injection"}
                 ],
                 "exercise": "实现 3 个角色 Prompt：Linux 终端、Python 解释器、面试官",
                 "hint": "用 System Message 定义角色，用 Few-shot 示例约束输出格式"
@@ -66,9 +67,10 @@ LEARNING_PLAN = {
                 "name": "Day 9-10: OpenAI API 实战",
                 "ddl": 10,
                 "resources": [
-                    {"title": "🇨🇳 OpenAI API 中文文档", "url": "https://platform.openai.com/docs/quickstart"},
-                    {"title": "🇨🇳 Python 调用 ChatGPT 教程", "url": "https://www.bilibili.com/video/BV1M24y1h78T"},
-                    {"title": "🇨🇳 API 成本优化技巧（中文）", "url": "https://zhuanlan.zhihu.com/p/620626490"}
+                    {"title": "🇨🇳 OpenAI API 快速入门", "url": "https://platform.openai.com/docs/quickstart"},
+                    {"title": "🇨🇳 Python 调用 ChatGPT 完整教程", "url": "https://www.bilibili.com/video/BV1841421q7H"},
+                    {"title": "🇨🇳 OpenAI Cookbook（中文版）", "url": "https://cookbook.openai.com/"},
+                    {"title": "🇨🇳 API 参数详解与优化", "url": "https://zhuanlan.zhihu.com/p/635686756"}
                 ],
                 "exercise": "实现一个多轮对话翻译助手，支持上下文记忆、流式输出、Token 统计",
                 "hint": "temperature、top_p、max_tokens、frequency_penalty 参数的作用，如何计算成本"
@@ -77,9 +79,10 @@ LEARNING_PLAN = {
                 "name": "Day 11-12: LangChain 框架入门",
                 "ddl": 12,
                 "resources": [
-                    {"title": "🇨🇳 LangChain 中文教程", "url": "https://www.langchain.com.cn/"},
-                    {"title": "🇨🇳 LangChain 实战（B站）", "url": "https://www.bilibili.com/video/BV1XX4y1K7X4"},
-                    {"title": "🇨🇳 LangChain 中文文档", "url": "https://python.langchain.com.cn/docs/get_started/introduction"}
+                    {"title": "🇨🇳 LangChain 中文文档", "url": "https://python.langchain.com/docs/get_started/introduction"},
+                    {"title": "🇨🇳 LangChain 入门实战教程", "url": "https://www.bilibili.com/video/BV1XX4y1K7X4"},
+                    {"title": "🇨🇳 LangChain GitHub 中文", "url": "https://github.com/langchain-ai/langchain"},
+                    {"title": "🇨🇳 LangChain 实战案例集", "url": "https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide"}
                 ],
                 "exercise": "用 LangChain 实现：PromptTemplate + LLM + OutputParser 的完整链路",
                 "hint": "掌握 Chain、Memory、Agent 三大核心组件"
@@ -88,9 +91,10 @@ LEARNING_PLAN = {
                 "name": "Day 13-14: 模型评估与测试",
                 "ddl": 14,
                 "resources": [
-                    {"title": "🇨🇳 如何评估大模型（中文）", "url": "https://zhuanlan.zhihu.com/p/642908437"},
+                    {"title": "🇨🇳 大模型评估方法详解", "url": "https://zhuanlan.zhihu.com/p/642908437"},
                     {"title": "🇨🇳 C-Eval 中文评测基准", "url": "https://cevalbenchmark.com/"},
-                    {"title": "🇨🇳 SuperCLUE 中文榜单", "url": "https://www.superclueai.com/"}
+                    {"title": "🇨🇳 SuperCLUE 中文榜单", "url": "https://www.superclueai.com/"},
+                    {"title": "🇨🇳 开源模型性能对比（飞书）", "url": "https://github.com/CLUEbenchmark/SuperCLUE"}
                 ],
                 "exercise": "对比 GPT-3.5 和 GPT-4 在同一任务上的表现差异（准确率、速度、成本）",
                 "hint": "使用 5-10 个测试样例，记录输出质量、响应时间、Token 消耗"
