@@ -19,9 +19,10 @@ LEARNING_PLAN = {
                 "name": "Day 1-2: LLM 基础概念",
                 "ddl": 2,
                 "resources": [
-                    {"title": "3Blue1Brown - Attention 机制", "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"},
-                    {"title": "什么是大语言模型", "url": "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"},
-                    {"title": "LLM 发展史", "url": "https://huggingface.co/blog/large-language-models"}
+                    {"title": "🇨🇳 李沐 - 大语言模型原理（中文）", "url": "https://www.bilibili.com/video/BV1TD4y137mP"},
+                    {"title": "🇨🇳 ChatGPT 工作原理（中文图解）", "url": "https://zhuanlan.zhihu.com/p/619490922"},
+                    {"title": "🇨🇳 什么是 Token（中文）", "url": "https://platform.openai.com/tokenizer"},
+                    {"title": "🇬🇧 3Blue1Brown - Attention（可开字幕）", "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"}
                 ],
                 "exercise": "用自己的话解释：Tokenization、Embedding、Attention、Transformer 四个概念",
                 "hint": "思考：为什么 GPT 不能直接理解文字？Token 是什么？Attention 在做什么计算？"
@@ -30,9 +31,10 @@ LEARNING_PLAN = {
                 "name": "Day 3-4: Transformer 架构深入",
                 "ddl": 4,
                 "resources": [
-                    {"title": "The Illustrated Transformer", "url": "https://jalammar.github.io/illustrated-transformer/"},
-                    {"title": "Transformer 论文精读", "url": "https://www.youtube.com/watch?v=nzqlFIcCSWQ"},
-                    {"title": "Let's build GPT (Karpathy)", "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY"}
+                    {"title": "🇨🇳 李沐论文精读 - Transformer（中文）", "url": "https://www.bilibili.com/video/BV1pu411o7BE"},
+                    {"title": "🇨🇳 图解 Transformer（中文翻译）", "url": "https://blog.csdn.net/qq_41664845/article/details/84969266"},
+                    {"title": "🇨🇳 Attention 机制详解（中文）", "url": "https://zhuanlan.zhihu.com/p/47282410"},
+                    {"title": "🇬🇧 Illustrated Transformer（可翻译）", "url": "https://jalammar.github.io/illustrated-transformer/"}
                 ],
                 "exercise": "绘制 Transformer 完整架构图，手动计算一次 Self-Attention（3个词的例子）",
                 "hint": "Q=WQ*X, K=WK*X, V=WV*X, Attention(Q,K,V) = softmax(QK^T/√d_k)V，重点理解 Multi-Head"
@@ -41,9 +43,10 @@ LEARNING_PLAN = {
                 "name": "Day 5-6: Prompt Engineering 基础",
                 "ddl": 6,
                 "resources": [
-                    {"title": "吴恩达 Prompt 课程", "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"},
-                    {"title": "Prompt Engineering Guide", "url": "https://www.promptingguide.ai/zh"},
-                    {"title": "OpenAI Prompt 最佳实践", "url": "https://platform.openai.com/docs/guides/prompt-engineering"}
+                    {"title": "🇨🇳 Prompt Engineering 中文指南", "url": "https://www.promptingguide.ai/zh"},
+                    {"title": "🇨🇳 吴恩达课程（B站中文字幕）", "url": "https://www.bilibili.com/video/BV1Bo4y1A7FU"},
+                    {"title": "🇨🇳 Prompt 技巧大全（中文）", "url": "https://github.com/f/awesome-chatgpt-prompts/blob/main/README-cn.md"},
+                    {"title": "🇨🇳 OpenAI Prompt 最佳实践（中文）", "url": "https://cookbook.openai.com/"}
                 ],
                 "exercise": "掌握 6 种 Prompt 技巧：Zero-shot、Few-shot、CoT、Self-Consistency、ToT、ReAct",
                 "hint": "实践：写一个旅游规划 Prompt，要求输出 JSON 格式，包含景点、预算、时间安排"
@@ -52,8 +55,9 @@ LEARNING_PLAN = {
                 "name": "Day 7-8: Prompt 进阶技巧",
                 "ddl": 8,
                 "resources": [
-                    {"title": "Advanced Prompting", "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/"},
-                    {"title": "Prompt 注入攻防", "url": "https://learnprompting.org/docs/prompt_hacking/injection"}
+                    {"title": "🇨🇳 Prompt 注入攻防（中文）", "url": "https://learnprompting.org/zh-Hans/docs/prompt_hacking/injection"},
+                    {"title": "🇨🇳 提示词工程指南（中文）", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide/tree/main/guides/prompts-intro.zh.md"},
+                    {"title": "🇨🇳 常用 Prompt 模板（中文）", "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"}
                 ],
                 "exercise": "实现 3 个角色 Prompt：Linux 终端、Python 解释器、面试官",
                 "hint": "用 System Message 定义角色，用 Few-shot 示例约束输出格式"
@@ -62,9 +66,9 @@ LEARNING_PLAN = {
                 "name": "Day 9-10: OpenAI API 实战",
                 "ddl": 10,
                 "resources": [
-                    {"title": "OpenAI API 文档", "url": "https://platform.openai.com/docs/quickstart"},
-                    {"title": "API 参数详解", "url": "https://platform.openai.com/docs/api-reference/chat"},
-                    {"title": "Token 计费规则", "url": "https://openai.com/pricing"}
+                    {"title": "🇨🇳 OpenAI API 中文文档", "url": "https://platform.openai.com/docs/quickstart"},
+                    {"title": "🇨🇳 Python 调用 ChatGPT 教程", "url": "https://www.bilibili.com/video/BV1M24y1h78T"},
+                    {"title": "🇨🇳 API 成本优化技巧（中文）", "url": "https://zhuanlan.zhihu.com/p/620626490"}
                 ],
                 "exercise": "实现一个多轮对话翻译助手，支持上下文记忆、流式输出、Token 统计",
                 "hint": "temperature、top_p、max_tokens、frequency_penalty 参数的作用，如何计算成本"
@@ -73,9 +77,9 @@ LEARNING_PLAN = {
                 "name": "Day 11-12: LangChain 框架入门",
                 "ddl": 12,
                 "resources": [
-                    {"title": "LangChain 快速开始", "url": "https://python.langchain.com/docs/get_started/quickstart"},
-                    {"title": "LangChain 核心概念", "url": "https://python.langchain.com/docs/modules/"},
-                    {"title": "LCEL 表达式", "url": "https://python.langchain.com/docs/expression_language/"}
+                    {"title": "🇨🇳 LangChain 中文教程", "url": "https://www.langchain.com.cn/"},
+                    {"title": "🇨🇳 LangChain 实战（B站）", "url": "https://www.bilibili.com/video/BV1XX4y1K7X4"},
+                    {"title": "🇨🇳 LangChain 中文文档", "url": "https://python.langchain.com.cn/docs/get_started/introduction"}
                 ],
                 "exercise": "用 LangChain 实现：PromptTemplate + LLM + OutputParser 的完整链路",
                 "hint": "掌握 Chain、Memory、Agent 三大核心组件"
@@ -84,8 +88,9 @@ LEARNING_PLAN = {
                 "name": "Day 13-14: 模型评估与测试",
                 "ddl": 14,
                 "resources": [
-                    {"title": "如何评估 LLM", "url": "https://huggingface.co/blog/evaluating-llm-chat-models"},
-                    {"title": "MMLU/HellaSwag 基准", "url": "https://github.com/hendrycks/test"}
+                    {"title": "🇨🇳 如何评估大模型（中文）", "url": "https://zhuanlan.zhihu.com/p/642908437"},
+                    {"title": "🇨🇳 C-Eval 中文评测基准", "url": "https://cevalbenchmark.com/"},
+                    {"title": "🇨🇳 SuperCLUE 中文榜单", "url": "https://www.superclueai.com/"}
                 ],
                 "exercise": "对比 GPT-3.5 和 GPT-4 在同一任务上的表现差异（准确率、速度、成本）",
                 "hint": "使用 5-10 个测试样例，记录输出质量、响应时间、Token 消耗"
@@ -98,9 +103,9 @@ LEARNING_PLAN = {
                 "name": "Day 15-16: Embedding 与向量检索",
                 "ddl": 16,
                 "resources": [
-                    {"title": "Vector Embeddings 原理", "url": "https://www.pinecone.io/learn/vector-embeddings/"},
-                    {"title": "text-embedding-ada-002", "url": "https://platform.openai.com/docs/guides/embeddings"},
-                    {"title": "向量相似度计算", "url": "https://www.pinecone.io/learn/vector-similarity/"}
+                    {"title": "🇨🇳 Embedding 原理详解（中文）", "url": "https://zhuanlan.zhihu.com/p/647710447"},
+                    {"title": "🇨🇳 向量相似度计算（中文）", "url": "https://www.cnblogs.com/wuyongqiang/p/15467234.html"},
+                    {"title": "🇨🇳 OpenAI Embedding API 使用", "url": "https://platform.openai.com/docs/guides/embeddings"}
                 ],
                 "exercise": "理解 Cosine Similarity、Euclidean Distance、Dot Product 的区别，手动计算示例",
                 "hint": "为什么 Embedding 能捕捉语义？768 维向量代表什么？归一化的作用？"
@@ -109,8 +114,9 @@ LEARNING_PLAN = {
                 "name": "Day 17-18: ChromaDB 实战",
                 "ddl": 18,
                 "resources": [
-                    {"title": "ChromaDB 快速开始", "url": "https://docs.trychroma.com/getting-started"},
-                    {"title": "向量数据库对比", "url": "https://github.com/qdrant/vector-db-benchmark"}
+                    {"title": "🇨🇳 ChromaDB 中文教程", "url": "https://docs.trychroma.com/getting-started"},
+                    {"title": "🇨🇳 向量数据库入门（中文）", "url": "https://zhuanlan.zhihu.com/p/639277854"},
+                    {"title": "🇨🇳 Milvus vs Chroma 对比", "url": "https://zhuanlan.zhihu.com/p/635839939"}
                 ],
                 "exercise": "实现文档切片 → Embedding → 存储 → 语义搜索完整流程",
                 "hint": "RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)"
@@ -119,8 +125,9 @@ LEARNING_PLAN = {
                 "name": "Day 19-20: RAG 核心流程",
                 "ddl": 20,
                 "resources": [
-                    {"title": "LangChain RAG", "url": "https://python.langchain.com/docs/use_cases/question_answering/"},
-                    {"title": "RAG 论文", "url": "https://arxiv.org/abs/2005.11401"}
+                    {"title": "🇨🇳 RAG 原理与实践（中文）", "url": "https://zhuanlan.zhihu.com/p/651857654"},
+                    {"title": "🇨🇳 LangChain RAG 教程", "url": "https://www.langchain.com.cn/use_cases/question_answering"},
+                    {"title": "🇨🇳 知识库问答实战（B站）", "url": "https://www.bilibili.com/video/BV1sN411n7cc"}
                 ],
                 "exercise": "构建个人知识库问答系统（支持 PDF/Markdown 导入）",
                 "hint": "Retriever → Prompt → LLM → Answer，注意 Context 长度控制"
@@ -129,8 +136,9 @@ LEARNING_PLAN = {
                 "name": "Day 21: 进阶 RAG 优化",
                 "ddl": 21,
                 "resources": [
-                    {"title": "Advanced RAG", "url": "https://www.pinecone.io/learn/advanced-rag/"},
-                    {"title": "Reranking 技术", "url": "https://www.sbert.net/examples/applications/cross-encoder/README.html"}
+                    {"title": "🇨🇳 RAG 进阶技巧（中文）", "url": "https://zhuanlan.zhihu.com/p/667626118"},
+                    {"title": "🇨🇳 Reranking 技术详解", "url": "https://zhuanlan.zhihu.com/p/641080888"},
+                    {"title": "🇨🇳 混合检索策略（中文）", "url": "https://blog.csdn.net/weixin_43334693/article/details/134099766"}
                 ],
                 "exercise": "实现 Hybrid Search（BM25 + Vector）+ Reranking + 引用来源标注",
                 "hint": "检索 Top-20 → Rerank → 取 Top-5 → 注入 Prompt，输出 [来源1][来源2]"
@@ -140,166 +148,182 @@ LEARNING_PLAN = {
     "第三阶段：模型微调 (Week 4-7)": {
         "tasks": [
             {
-                "name": "Day 15-17: 微调理论基础",
-                "ddl": 17,
+                "name": "Day 22-24: 微调理论基础",
+                "ddl": 24,
                 "resources": [
-                    {"title": "Fine-tuning 原理", "url": "https://huggingface.co/blog/fine-tune-llms"},
-                    {"title": "LoRA 论文解读", "url": "https://arxiv.org/abs/2106.09685"},
-                    {"title": "PEFT 文档", "url": "https://huggingface.co/docs/peft/index"}
+                    {"title": "🇨🇳 大模型微调入门（中文）", "url": "https://zhuanlan.zhihu.com/p/635152813"},
+                    {"title": "🇨🇳 LoRA 原理详解（中文）", "url": "https://zhuanlan.zhihu.com/p/618894919"},
+                    {"title": "🇨🇳 PEFT 技术对比（中文）", "url": "https://zhuanlan.zhihu.com/p/635686756"},
+                    {"title": "🇨🇳 李沐 - LoRA 论文精读", "url": "https://www.bilibili.com/video/BV1Ld4y1L7L6"}
                 ],
                 "exercise": "理解 4 种微调方法：Full Fine-tuning、Adapter、Prefix Tuning、LoRA 的区别",
                 "hint": "对比参数量、显存占用、训练速度、效果。为什么 LoRA 只训练 0.1% 参数却效果好？"
             },
             {
-                "name": "Day 18-20: 环境搭建与模型加载",
-                "ddl": 20,
+                "name": "Day 25-27: 环境搭建与模型加载",
+                "ddl": 27,
                 "resources": [
-                    {"title": "Transformers 快速开始", "url": "https://huggingface.co/docs/transformers/quicktour"},
-                    {"title": "模型量化 (4bit/8bit)", "url": "https://huggingface.co/blog/4bit-transformers-bitsandbytes"},
-                    {"title": "Accelerate 库", "url": "https://huggingface.co/docs/accelerate/index"}
+                    {"title": "🇨🇳 Transformers 中文教程", "url": "https://transformers.run/"},
+                    {"title": "🇨🇳 模型量化详解（中文）", "url": "https://zhuanlan.zhihu.com/p/627436535"},
+                    {"title": "🇨🇳 Colab 使用教程（中文）", "url": "https://www.bilibili.com/video/BV1Vt4y1K7HX"},
+                    {"title": "🇨🇳 显存优化技巧（中文）", "url": "https://zhuanlan.zhihu.com/p/620885226"}
                 ],
                 "exercise": "在 Colab (T4 GPU) 加载 Qwen-7B-Chat，实现 4bit 量化推理",
                 "hint": "使用 BitsAndBytesConfig + load_in_4bit=True 节省显存，from_pretrained 参数详解"
             },
             {
-                "name": "Day 21-23: 数据集构建与处理",
-                "ddl": 23,
+                "name": "Day 28-30: 数据集构建与处理",
+                "ddl": 30,
                 "resources": [
-                    {"title": "Alpaca 数据集", "url": "https://github.com/tatsu-lab/stanford_alpaca"},
-                    {"title": "数据格式规范", "url": "https://huggingface.co/docs/datasets/about_dataset_load"},
-                    {"title": "Tokenization 技巧", "url": "https://huggingface.co/docs/transformers/preprocessing"}
+                    {"title": "🇨🇳 微调数据集构建指南", "url": "https://zhuanlan.zhihu.com/p/635686756"},
+                    {"title": "🇨🇳 Alpaca 中文数据集", "url": "https://github.com/ymcui/Chinese-LLaMA-Alpaca"},
+                    {"title": "🇨🇳 数据清洗与增强（中文）", "url": "https://zhuanlan.zhihu.com/p/629589593"},
+                    {"title": "🇨🇳 指令微调数据格式", "url": "https://github.com/hiyouga/LLaMA-Factory/blob/main/data/README_zh.md"}
                 ],
                 "exercise": "构建 100 条高质量指令微调数据集（选择一个垂直领域：医疗/法律/编程/客服）",
                 "hint": "格式：{instruction, input, output}。确保多样性：问答、总结、翻译、生成等"
             },
             {
-                "name": "Day 24-26: LoRA 微调实战",
-                "ddl": 26,
+                "name": "Day 31-33: LoRA 微调实战",
+                "ddl": 33,
                 "resources": [
-                    {"title": "LoRA 官方代码", "url": "https://github.com/microsoft/LoRA"},
-                    {"title": "PEFT + Transformers", "url": "https://huggingface.co/blog/peft"},
-                    {"title": "训练参数调优", "url": "https://wandb.ai/capecape/alpaca_ft/reports/How-to-Fine-Tune-an-LLM-Part-1-Preparing-a-Dataset-for-Instruction-Tuning--Vmlldzo1NTcxNzE2"}
+                    {"title": "🇨🇳 LoRA 微调完整教程（中文）", "url": "https://www.bilibili.com/video/BV1LW4y1r7GC"},
+                    {"title": "🇨🇳 PEFT 库使用指南", "url": "https://huggingface.co/docs/peft/index"},
+                    {"title": "🇨🇳 ChatGLM-6B 微调实战", "url": "https://github.com/THUDM/ChatGLM-6B/tree/main/ptuning"},
+                    {"title": "🇨🇳 参数调优最佳实践", "url": "https://zhuanlan.zhihu.com/p/631535042"}
                 ],
                 "exercise": "使用 LoRA 微调 Qwen-7B，实现特定风格输出（例如：猫娘、古风、技术博主）",
                 "hint": "重点参数：r=8, lora_alpha=32, lora_dropout=0.1, target_modules=['q_proj','v_proj']"
             },
             {
-                "name": "Day 27-29: QLoRA 与显存优化",
-                "ddl": 29,
+                "name": "Day 34-36: QLoRA 与显存优化",
+                "ddl": 36,
                 "resources": [
-                    {"title": "QLoRA 论文", "url": "https://arxiv.org/abs/2305.14314"},
-                    {"title": "Gradient Checkpointing", "url": "https://huggingface.co/docs/transformers/v4.18.0/en/performance#gradient-checkpointing"},
-                    {"title": "显存优化技巧", "url": "https://huggingface.co/docs/transformers/perf_train_gpu_one"}
+                    {"title": "🇨🇳 QLoRA 原理与实践（中文）", "url": "https://zhuanlan.zhihu.com/p/636879908"},
+                    {"title": "🇨🇳 4bit 量化详解（中文）", "url": "https://zhuanlan.zhihu.com/p/632426681"},
+                    {"title": "🇨🇳 12GB 显卡微调 LLaMA", "url": "https://www.bilibili.com/video/BV1fd4y1Z7Y5"},
+                    {"title": "🇨🇳 Gradient Checkpointing", "url": "https://zhuanlan.zhihu.com/p/599806898"}
                 ],
                 "exercise": "用 QLoRA 在 12GB 显卡上微调 13B 模型（对比 LoRA 的显存占用）",
                 "hint": "4bit 量化 + NF4 数据类型 + double quantization，batch_size=1, gradient_accumulation_steps=4"
             },
             {
-                "name": "Day 30-32: LLaMA-Factory 全流程",
-                "ddl": 32,
+                "name": "Day 37-39: LLaMA-Factory 全流程",
+                "ddl": 39,
                 "resources": [
-                    {"title": "LLaMA-Factory", "url": "https://github.com/hiyouga/LLaMA-Factory"},
-                    {"title": "WebUI 使用教程", "url": "https://www.youtube.com/watch?v=your-tutorial"},
-                    {"title": "配置文件详解", "url": "https://github.com/hiyouga/LLaMA-Factory/wiki"}
+                    {"title": "🇨🇳 LLaMA-Factory 中文教程", "url": "https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md"},
+                    {"title": "🇨🇳 WebUI 使用指南（B站）", "url": "https://www.bilibili.com/video/BV1LW4y1r7GC"},
+                    {"title": "🇨🇳 配置文件详解（中文）", "url": "https://github.com/hiyouga/LLaMA-Factory/wiki/Chinese"},
+                    {"title": "🇨🇳 常见问题解答", "url": "https://github.com/hiyouga/LLaMA-Factory/blob/main/FAQ_zh.md"}
                 ],
                 "exercise": "用 LLaMA-Factory 完成：数据准备 → 训练 → 评估 → 导出 → 部署完整流程",
                 "hint": "llamafactory-cli train --stage sft --model_name_or_path qwen --dataset alpaca_zh"
             },
             {
-                "name": "Day 33-35: 全参数微调 (SFT)",
-                "ddl": 35,
+                "name": "Day 40-42: 全参数微调 (SFT)",
+                "ddl": 42,
                 "resources": [
-                    {"title": "Supervised Fine-Tuning", "url": "https://huggingface.co/blog/llama2#how-to-prompt-llama-2"},
-                    {"title": "DeepSpeed ZeRO", "url": "https://www.deepspeed.ai/tutorials/zero/"},
-                    {"title": "FSDP 分布式训练", "url": "https://pytorch.org/blog/introducing-pytorch-fully-sharded-data-parallel-api/"}
+                    {"title": "🇨🇳 全参数微调 vs LoRA（中文）", "url": "https://zhuanlan.zhihu.com/p/635686756"},
+                    {"title": "🇨🇳 DeepSpeed 使用教程", "url": "https://www.bilibili.com/video/BV1Td4y1Z7Y5"},
+                    {"title": "🇨🇳 分布式训练入门（中文）", "url": "https://zhuanlan.zhihu.com/p/617133971"},
+                    {"title": "🇨🇳 多卡训练配置指南", "url": "https://github.com/THUDM/ChatGLM-6B/blob/main/README.md"}
                 ],
                 "exercise": "理解全参数微调 vs LoRA 的适用场景，什么时候必须用全参数？",
                 "hint": "领域知识注入、语言迁移需要全参数；风格调整、任务适配用 LoRA"
             },
             {
-                "name": "Day 36-38: RLHF 与 DPO",
-                "ddl": 38,
+                "name": "Day 43-45: RLHF 与 DPO",
+                "ddl": 45,
                 "resources": [
-                    {"title": "RLHF 原理", "url": "https://huggingface.co/blog/rlhf"},
-                    {"title": "DPO 论文", "url": "https://arxiv.org/abs/2305.18290"},
-                    {"title": "TRL 库", "url": "https://github.com/huggingface/trl"}
+                    {"title": "🇨🇳 RLHF 原理详解（中文）", "url": "https://zhuanlan.zhihu.com/p/622134699"},
+                    {"title": "🇨🇳 DPO 算法解析（中文）", "url": "https://zhuanlan.zhihu.com/p/642569664"},
+                    {"title": "🇨🇳 TRL 库使用教程", "url": "https://huggingface.co/docs/trl/index"},
+                    {"title": "🇨🇳 偏好数据构建（中文）", "url": "https://zhuanlan.zhihu.com/p/638333362"}
                 ],
                 "exercise": "构建偏好数据集（chosen vs rejected），理解 PPO 训练流程",
                 "hint": "RLHF 三阶段：SFT → Reward Model → PPO。DPO 直接优化，无需 RM"
             },
             {
-                "name": "Day 39-42: 模型评估与部署",
-                "ddl": 42,
+                "name": "Day 46-48: 模型评估与部署",
+                "ddl": 48,
                 "resources": [
-                    {"title": "模型评估指标", "url": "https://huggingface.co/spaces/evaluate-metric/perplexity"},
-                    {"title": "vLLM 高性能推理", "url": "https://github.com/vllm-project/vllm"},
-                    {"title": "模型量化部署", "url": "https://github.com/ggerganov/llama.cpp"}
+                    {"title": "🇨🇳 模型评估指标详解（中文）", "url": "https://zhuanlan.zhihu.com/p/642908437"},
+                    {"title": "🇨🇳 vLLM 部署教程（中文）", "url": "https://www.bilibili.com/video/BV1RN411c7nc"},
+                    {"title": "🇨🇳 llama.cpp 量化部署", "url": "https://zhuanlan.zhihu.com/p/635152813"},
+                    {"title": "🇨🇳 FastChat 部署指南", "url": "https://github.com/lm-sys/FastChat/blob/main/docs/openai_api.md"}
                 ],
                 "exercise": "评估微调后模型：PPL、BLEU、人工评分，对比微调前后差异",
                 "hint": "使用 vLLM 部署，对比推理速度（tokens/s）、显存占用、并发能力"
             },
             {
-                "name": "Day 43-45: 持续学习与灾难遗忘",
-                "ddl": 45,
+                "name": "Day 49-51: 持续学习与灾难遗忘",
+                "ddl": 51,
                 "resources": [
-                    {"title": "Catastrophic Forgetting", "url": "https://arxiv.org/abs/2002.06305"},
-                    {"title": "Elastic Weight Consolidation", "url": "https://arxiv.org/abs/1612.00796"}
+                    {"title": "🇨🇳 灾难性遗忘问题（中文）", "url": "https://zhuanlan.zhihu.com/p/640987937"},
+                    {"title": "🇨🇳 持续学习策略（中文）", "url": "https://zhuanlan.zhihu.com/p/618894919"},
+                    {"title": "🇨🇳 通用能力保持技巧", "url": "https://github.com/hiyouga/LLaMA-Factory/wiki/Chinese"}
                 ],
                 "exercise": "微调后测试通用能力是否下降（加法运算、常识问答），如何缓解？",
                 "hint": "混合通用数据集、控制学习率、使用 EWC 正则化"
             }
         ]
     },
-    "第四阶段：Agent 开发 (Week 8)": {
+    "第四阶段：Agent 开发 (Week 8-9)": {
         "tasks": [
             {
-                "name": "Day 46-48: Agent 基础与 ReAct",
-                "ddl": 48,
+                "name": "Day 52-54: Agent 基础与 ReAct",
+                "ddl": 54,
                 "resources": [
-                    {"title": "ReAct 论文", "url": "https://arxiv.org/abs/2210.03629"},
-                    {"title": "LangChain Agent", "url": "https://python.langchain.com/docs/modules/agents/"},
-                    {"title": "Agent 设计模式", "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"}
+                    {"title": "🇨🇳 Agent 原理详解（中文）", "url": "https://zhuanlan.zhihu.com/p/643085881"},
+                    {"title": "🇨🇳 ReAct 框架实战（中文）", "url": "https://www.bilibili.com/video/BV1Xu411z7d6"},
+                    {"title": "🇨🇳 LangChain Agent 教程", "url": "https://www.langchain.com.cn/modules/agents"},
+                    {"title": "🇬🇧 ReAct 论文（可翻译）", "url": "https://arxiv.org/abs/2210.03629"}
                 ],
                 "exercise": "实现 ReAct Agent：Question → Thought → Action → Observation 循环",
                 "hint": "工具：Calculator、Wikipedia、Weather API，最多 5 轮循环"
             },
             {
-                "name": "Day 49-51: Function Calling",
-                "ddl": 51,
+                "name": "Day 55-57: Function Calling",
+                "ddl": 57,
                 "resources": [
-                    {"title": "OpenAI Function Calling", "url": "https://platform.openai.com/docs/guides/function-calling"},
-                    {"title": "工具定义规范", "url": "https://json-schema.org/"}
+                    {"title": "🇨🇳 Function Calling 详解（中文）", "url": "https://zhuanlan.zhihu.com/p/638318103"},
+                    {"title": "🇨🇳 OpenAI 函数调用教程", "url": "https://www.bilibili.com/video/BV1vu411z7d6"},
+                    {"title": "🇨🇳 工具定义最佳实践（中文）", "url": "https://platform.openai.com/docs/guides/function-calling"}
                 ],
                 "exercise": "构建智能助手：天气查询 + 日历管理 + 邮件发送（3 个 Function）",
                 "hint": "定义 JSON Schema → 模型返回 function_call → 执行函数 → 返回结果"
             },
             {
-                "name": "Day 52-54: 多 Agent 协作",
-                "ddl": 54,
+                "name": "Day 58-60: 多 Agent 协作",
+                "ddl": 60,
                 "resources": [
-                    {"title": "AutoGen", "url": "https://github.com/microsoft/autogen"},
-                    {"title": "MetaGPT", "url": "https://github.com/geekan/MetaGPT"},
-                    {"title": "CrewAI", "url": "https://github.com/joaomdmoura/crewAI"}
+                    {"title": "🇨🇳 AutoGen 中文教程", "url": "https://www.bilibili.com/video/BV1LN411E7cX"},
+                    {"title": "🇨🇳 MetaGPT 实战指南", "url": "https://github.com/geekan/MetaGPT/blob/main/README_CN.md"},
+                    {"title": "🇨🇳 多 Agent 协作模式（中文）", "url": "https://zhuanlan.zhihu.com/p/655439706"},
+                    {"title": "🇨🇳 CrewAI 使用教程", "url": "https://www.bilibili.com/video/BV1Xu411z7d6"}
                 ],
                 "exercise": "实现双 Agent Code Review：Coder (写代码) + Reviewer (审查代码)",
                 "hint": "UserProxy ↔ Assistant，最多 3 轮对话达成一致"
             },
             {
-                "name": "Day 55-56: Memory 与上下文管理",
-                "ddl": 56,
+                "name": "Day 61-62: Memory 与上下文管理",
+                "ddl": 62,
                 "resources": [
-                    {"title": "LangChain Memory", "url": "https://python.langchain.com/docs/modules/memory/"},
-                    {"title": "上下文窗口优化", "url": "https://github.com/hwchase17/chat-langchain"}
+                    {"title": "🇨🇳 LangChain Memory 详解", "url": "https://www.langchain.com.cn/modules/memory"},
+                    {"title": "🇨🇳 上下文窗口优化（中文）", "url": "https://zhuanlan.zhihu.com/p/642018299"},
+                    {"title": "🇨🇳 长对话管理策略（中文）", "url": "https://www.bilibili.com/video/BV1Vu411z7d6"}
                 ],
                 "exercise": "实现 ConversationBufferMemory、ConversationSummaryMemory 并对比",
                 "hint": "超过 4k tokens 如何压缩？如何保留关键信息？"
             },
             {
-                "name": "Day 57-60: 完整项目实战",
-                "ddl": 60,
+                "name": "Day 63-65: 完整项目实战",
+                "ddl": 65,
                 "resources": [
-                    {"title": "LangChain 项目案例", "url": "https://github.com/langchain-ai/langchain/tree/master/templates"},
-                    {"title": "Streamlit 部署", "url": "https://docs.streamlit.io/streamlit-community-cloud"}
+                    {"title": "🇨🇳 智能客服系统实战（中文）", "url": "https://www.bilibili.com/video/BV1LN411E7cX"},
+                    {"title": "🇨🇳 RAG + Agent 结合（中文）", "url": "https://zhuanlan.zhihu.com/p/655439706"},
+                    {"title": "🇨🇳 Streamlit 部署教程", "url": "https://www.bilibili.com/video/BV1Vt4y1K7HX"},
+                    {"title": "🇨🇳 项目完整代码示例", "url": "https://github.com/chatchat-space/Langchain-Chatchat"}
                 ],
                 "exercise": "综合项目：基于 RAG + Agent 的智能客服系统（知识库检索 + 工具调用 + 多轮对话）",
                 "hint": "整合所有知识点，部署到 Streamlit Cloud，准备作品集展示"
