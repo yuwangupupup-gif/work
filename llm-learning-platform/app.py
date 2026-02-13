@@ -329,6 +329,130 @@ LEARNING_PLAN = {
                 "hint": "整合所有知识点，部署到 Streamlit Cloud，准备作品集展示"
             }
         ]
+    },
+    "第五阶段：Graph + LLM 融合 (Week 10-11)": {
+        "tasks": [
+            {
+                "name": "Day 66-68: 图基础与知识图谱入门",
+                "ddl": 68,
+                "resources": [
+                    {"title": "🇨🇳 知识图谱入门（中文）", "url": "https://www.bilibili.com/video/BV1wE411s7qY"},
+                    {"title": "🇨🇳 图数据库 Neo4j 教程", "url": "https://zhuanlan.zhihu.com/p/88745411"},
+                    {"title": "🇨🇳 知识图谱构建实战（中文）", "url": "https://github.com/liuhuanyong/QASystemOnMedicalKG"},
+                    {"title": "🇬🇧 Neo4j 官方文档", "url": "https://neo4j.com/docs/"}
+                ],
+                "exercise": "理解图的基本概念：节点、边、属性图，用 Neo4j 构建一个简单的知识图谱（10个实体）",
+                "hint": "Cypher 语法：CREATE (n:Person {name:'Alice'})-[:KNOWS]->(m:Person {name:'Bob'})"
+            },
+            {
+                "name": "Day 69-71: LLM + 知识图谱问答",
+                "ddl": 71,
+                "resources": [
+                    {"title": "🇨🇳 知识图谱问答系统（中文）", "url": "https://zhuanlan.zhihu.com/p/637482341"},
+                    {"title": "🇨🇳 Text2Cypher 实现（中文）", "url": "https://www.bilibili.com/video/BV1Gu411p7wE"},
+                    {"title": "🇨🇳 LangChain + Neo4j 教程", "url": "https://python.langchain.com.cn/docs/use_cases/graph/"},
+                    {"title": "🇬🇧 GraphCypherQAChain", "url": "https://python.langchain.com/docs/integrations/graphs/neo4j_cypher"}
+                ],
+                "exercise": "实现 Text2Cypher：自然语言问题 → LLM生成Cypher查询 → Neo4j执行 → 返回答案",
+                "hint": "Prompt: 'Convert this question to Cypher query: Who are Alice's friends?'"
+            },
+            {
+                "name": "Day 72-74: GraphRAG 原理与实践",
+                "ddl": 74,
+                "resources": [
+                    {"title": "🇨🇳 GraphRAG 详解（中文）", "url": "https://zhuanlan.zhihu.com/p/705375026"},
+                    {"title": "🇨🇳 微软 GraphRAG 教程（中文）", "url": "https://www.bilibili.com/video/BV1Qx4y1d7hP"},
+                    {"title": "🇬🇧 GraphRAG 论文", "url": "https://arxiv.org/abs/2404.16130"},
+                    {"title": "🇨🇳 GraphRAG 源码解读", "url": "https://github.com/microsoft/graphrag"}
+                ],
+                "exercise": "理解 GraphRAG vs 传统RAG 的区别，实现基于社区检测的全局检索",
+                "hint": "文档 → 实体抽取 → 构图 → 社区检测 → 摘要生成 → 检索增强"
+            },
+            {
+                "name": "Day 75-77: 图神经网络 + LLM",
+                "ddl": 77,
+                "resources": [
+                    {"title": "🇨🇳 GNN 入门（李沐讲解）", "url": "https://www.bilibili.com/video/BV1iT4y1d7zP"},
+                    {"title": "🇨🇳 Graph Transformer 详解", "url": "https://zhuanlan.zhihu.com/p/543101008"},
+                    {"title": "🇨🇳 LLM as Graph Reasoner", "url": "https://zhuanlan.zhihu.com/p/668034814"},
+                    {"title": "🇬🇧 Graph-ToolFormer 论文", "url": "https://arxiv.org/abs/2304.11116"}
+                ],
+                "exercise": "理解如何用 LLM 增强图推理：节点分类、链接预测、子图推理",
+                "hint": "GNN 提取图结构特征 → LLM 理解语义 → 融合推理"
+            },
+            {
+                "name": "Day 78-80: 多跳推理与路径查询",
+                "ddl": 80,
+                "resources": [
+                    {"title": "🇨🇳 多跳推理详解（中文）", "url": "https://zhuanlan.zhihu.com/p/642908437"},
+                    {"title": "🇨🇳 路径查询算法（中文）", "url": "https://www.bilibili.com/video/BV1Gu411p7wE"},
+                    {"title": "🇬🇧 Chain-of-Thought on Graphs", "url": "https://arxiv.org/abs/2404.07103"},
+                    {"title": "🇨🇳 复杂查询分解策略", "url": "https://zhuanlan.zhihu.com/p/655439706"}
+                ],
+                "exercise": "实现多跳推理：'Alice的朋友的老板是谁？' → 分解为多步查询 → LLM 推理路径",
+                "hint": "Query Decomposition → Sub-query Execution → Result Aggregation"
+            },
+            {
+                "name": "Day 81-83: 知识图谱自动构建",
+                "ddl": 83,
+                "resources": [
+                    {"title": "🇨🇳 LLM 实体关系抽取（中文）", "url": "https://zhuanlan.zhihu.com/p/636879908"},
+                    {"title": "🇨🇳 信息抽取三元组（中文）", "url": "https://www.bilibili.com/video/BV1wE411s7qY"},
+                    {"title": "🇨🇳 DeepKE 工具使用", "url": "https://github.com/zjunlp/DeepKE/blob/main/README_CN.md"},
+                    {"title": "🇬🇧 LLM for Knowledge Graph Construction", "url": "https://arxiv.org/abs/2305.13168"}
+                ],
+                "exercise": "用 LLM 从文本自动抽取实体和关系，构建知识图谱（处理10篇新闻）",
+                "hint": "Prompt: 'Extract entities and relations from: [text]. Output as JSON: {entities:[], relations:[]}'"
+            },
+            {
+                "name": "Day 84-86: 图推理增强技术",
+                "ddl": 86,
+                "resources": [
+                    {"title": "🇨🇳 图推理增强方法（中文）", "url": "https://zhuanlan.zhihu.com/p/705375026"},
+                    {"title": "🇨🇳 Reasoning on Graphs（中文）", "url": "https://www.bilibili.com/video/BV1Qx4y1d7hP"},
+                    {"title": "🇬🇧 Think-on-Graph 论文", "url": "https://arxiv.org/abs/2307.07697"},
+                    {"title": "🇨🇳 图结构化 Prompt", "url": "https://zhuanlan.zhihu.com/p/668034814"}
+                ],
+                "exercise": "实现 Think-on-Graph：让 LLM 在图上进行推理，而不是直接查询",
+                "hint": "Beam Search on Graph → LLM 评估路径 → 选择最优推理链"
+            },
+            {
+                "name": "Day 87-89: 时序图与动态知识",
+                "ddl": 89,
+                "resources": [
+                    {"title": "🇨🇳 时序知识图谱（中文）", "url": "https://zhuanlan.zhihu.com/p/637482341"},
+                    {"title": "🇨🇳 动态图推理（中文）", "url": "https://www.bilibili.com/video/BV1iT4y1d7zP"},
+                    {"title": "🇬🇧 Temporal Knowledge Graph", "url": "https://arxiv.org/abs/2304.04254"},
+                    {"title": "🇨🇳 知识更新策略", "url": "https://github.com/zjunlp/PromptKG"}
+                ],
+                "exercise": "处理时序推理：'谁在2020年是CEO？' vs '谁现在是CEO？'",
+                "hint": "添加时间戳属性 → 时态 Cypher 查询 → LLM 理解时序逻辑"
+            },
+            {
+                "name": "Day 90-92: 行业应用：金融/医疗风控",
+                "ddl": 92,
+                "resources": [
+                    {"title": "🇨🇳 金融风控知识图谱（中文）", "url": "https://zhuanlan.zhihu.com/p/88745411"},
+                    {"title": "🇨🇳 反欺诈图算法（中文）", "url": "https://www.bilibili.com/video/BV1Gu411p7wE"},
+                    {"title": "🇨🇳 医疗知识图谱问答", "url": "https://github.com/liuhuanyong/QASystemOnMedicalKG"},
+                    {"title": "🇬🇧 Graph for Fraud Detection", "url": "https://neo4j.com/use-cases/fraud-detection/"}
+                ],
+                "exercise": "构建小型金融风控系统：检测可疑交易链路（环状转账、异常关联）",
+                "hint": "构建交易图 → PageRank 找关键节点 → LLM 生成风险报告"
+            },
+            {
+                "name": "Day 93-95: 综合项目：智能问答系统",
+                "ddl": 95,
+                "resources": [
+                    {"title": "🇨🇳 知识图谱问答完整项目", "url": "https://github.com/liuhuanyong/QASystemOnMedicalKG"},
+                    {"title": "🇨🇳 GraphRAG + LangChain 实战", "url": "https://www.bilibili.com/video/BV1Qx4y1d7hP"},
+                    {"title": "🇨🇳 图数据库部署方案", "url": "https://zhuanlan.zhihu.com/p/637482341"},
+                    {"title": "🇬🇧 Production Graph RAG", "url": "https://github.com/microsoft/graphrag"}
+                ],
+                "exercise": "综合项目：构建领域知识图谱 + GraphRAG 问答系统（选择：电影/医疗/金融）",
+                "hint": "数据采集 → 知识抽取 → 图构建 → GraphRAG → Web UI → 部署上线"
+            }
+        ]
     }
 }
 
