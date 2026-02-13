@@ -1,0 +1,17 @@
+# 🚀 Week 2-4 高级依赖 (可选安装)
+# 如果要学习 RAG 和模型微调,单独安装这些包
+
+# RAG 相关
+langchain==0.1.6
+langchain-openai==0.0.5  
+chromadb==0.4.22
+
+# 模型微调相关
+transformers==4.37.2
+accelerate==0.26.1
+peft==0.8.2
+torch==2.1.2
+datasets==2.16.1
+
+# 安装命令:
+# pip install -r requirements-advanced.txt

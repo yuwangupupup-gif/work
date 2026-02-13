@@ -1,0 +1,11 @@
+# 核心 Web 框架
+streamlit==1.31.1
+pandas==2.1.4
+plotly==5.18.0
+
+# LLM API
+openai==1.12.0
+python-dotenv==1.0.1
+
+# 基础工具
+pytest==8.0.0
